@@ -238,7 +238,6 @@ font-weight: 700; font-size: 0.95rem; color: #fff;
 background: linear-gradient(135deg, var(--accent), var(--accent2));
 }
 
-
 .member-role-badge { display: inline-block; font-size: 0.7rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--accent); margin-bottom: 0.3rem; }
 .member-name { font-weight: 700; font-size: 1rem; color: var(--text); line-height: 1.3; }
 .member-desc { color: var(--muted); font-size: 0.875rem; line-height: 1.6; margin-bottom: 1.25rem; }
@@ -248,11 +247,7 @@ background: linear-gradient(135deg, var(--accent), var(--accent2));
 .member-skill-tag { background: var(--surface2); border: 1px solid var(--border); border-radius: 4px; padding: 0.2rem 0.55rem; font-size: 0.72rem; font-weight: 500; color: var(--muted2); }
 .leader-badge { position: absolute; top: -4px; left: -4px; background: linear-gradient(135deg, #f59e0b, #ef4444); color: #fff; font-size: 0.62rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 0.18rem 0.5rem; border-radius: 0 0 8px 0; }
 
-/* Upload tip text below grid */
-.upload-tip {
-text-align: center; color: var(--muted2); font-size: 0.78rem;
-margin-top: 1.25rem; display: flex; align-items: center; justify-content: center; gap: 0.4rem;
-}
+.upload-tip { text-align: center; color: var(--muted2); font-size: 0.78rem; margin-top: 1.25rem; display: flex; align-items: center; justify-content: center; gap: 0.4rem; }
 
 /* ── MODAL / RESUME ── */
 .modal-overlay { display: none; position: fixed; inset: 0; z-index: 2000; background: rgba(0,0,0,0.7); backdrop-filter: blur(8px); align-items: center; justify-content: center; padding: 1rem; }
@@ -267,11 +262,7 @@ margin-top: 1.25rem; display: flex; align-items: center; justify-content: center
 
 /* ── RESUME ── */
 .resume-hero { display: flex; align-items: flex-start; gap: 1.5rem; margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
-.resume-avatar-lg {
-width: 80px; height: 80px; border-radius: 18px; flex-shrink: 0; overflow: hidden;
-background: linear-gradient(135deg, var(--accent), var(--accent2));
-border: 2px solid var(--border);
-}
+.resume-avatar-lg { width: 80px; height: 80px; border-radius: 18px; flex-shrink: 0; overflow: hidden; background: linear-gradient(135deg, var(--accent), var(--accent2)); border: 2px solid var(--border); }
 .resume-avatar-lg img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .resume-avatar-lg .resume-initials { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.3rem; color: #fff; }
 .resume-fullname { font-size: 1.7rem; font-weight: 700; letter-spacing: -0.5px; line-height: 1.1; margin-bottom: 0.25rem; }
@@ -310,7 +301,6 @@ footer { border-top: 1px solid var(--border); padding: 1.75rem; text-align: cent
 </head>
 <body>
 
-<!-- NAVBAR -->
 <nav class="navbar">
 <div class="nav-inner">
 <div class="brand"><div class="brand-dot"></div>Group 3</div>
@@ -329,7 +319,6 @@ footer { border-top: 1px solid var(--border); padding: 1.75rem; text-align: cent
 </div>
 </nav>
 
-<!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
 <button class="nav-btn" id="mnav-home" onclick="showPage('home');closeMenu()">Home</button>
 <button class="nav-btn" id="mnav-about" onclick="showPage('about');closeMenu()">About</button>
@@ -343,10 +332,7 @@ footer { border-top: 1px solid var(--border); padding: 1.75rem; text-align: cent
 <div class="hero-glow"></div>
 <div class="hero-eyebrow"><span class="hero-eyebrow-dot"></span>BSIT — Group 3</div>
 <h1 class="hero-title">We Build.<br><em>We Learn.</em><br>We Grow.</h1>
-<div class="college-banner">
-<span>🎓</span>
-<span>Now continuing our journey in <strong>College</strong> — onward and upward!</span>
-</div>
+<div class="college-banner"><span>🎓</span><span>Now continuing our journey in <strong>College</strong> — onward and upward!</span></div>
 <p class="hero-sub">A collaborative team of students building web and software projects — learning by doing, growing together.</p>
 <div class="hero-actions">
 <button class="btn-primary-hero" onclick="showPage('projects')">View our projects</button>
@@ -369,178 +355,19 @@ footer { border-top: 1px solid var(--border); padding: 1.75rem; text-align: cent
 <h2 class="section-heading">About Group 3</h2>
 <p class="section-desc">A team with a shared goal — learn by building, support each other, and ship things that matter.</p>
 <div class="about-grid">
-<div class="about-text">
-<p><strong>Group 3</strong> is a collaborative team of BSIT students from Rosales National High School, focused on developing web and software projects using modern technologies.</p>
-<div class="college-highlight">
-<span class="college-highlight-icon">🎓</span>
-<p>We've officially graduated Senior High and are now stepping into <strong>college</strong>. The grind doesn't stop — it levels up.</p>
-</div>
-<div class="about-quote">"We believe in learning through hands-on experience."</div>
-<p>Every project we build is a chance to sharpen our skills, challenge ourselves, and support each other. From enrollment systems to POS applications, we tackle real-world problems with practical solutions.</p>
-<p>We're not just classmates — we're a crew that figures things out <strong>together</strong>.</p>
-<div class="tech-tags">
-<span class="tech-tag">Android</span><span class="tech-tag">Bootstrap</span><span class="tech-tag">C++</span>
-<span class="tech-tag">Figma</span><span class="tech-tag">HTML / CSS</span><span class="tech-tag">Java</span>
-<span class="tech-tag">JavaScript</span><span class="tech-tag">MySQL</span><span class="tech-tag">PHP</span><span class="tech-tag">Python</span>
-</div>
-</div>
-<div class="stat-cards">
-<div class="stat-card"><div class="stat-icon-box">👥</div><div><div class="stat-card-num">7</div><div class="stat-card-label">Team Members</div></div></div>
-<div class="stat-card"><div class="stat-icon-box">🚀</div><div><div class="stat-card-num">4+</div><div class="stat-card-label">Projects Completed</div></div></div>
-<div class="stat-card"><div class="stat-icon-box">🎓</div><div><div class="stat-card-num">SHS</div><div class="stat-card-label">Graduates — Now in College!</div></div></div>
-<div class="stat-card"><div class="stat-icon-box">🎯</div><div><div class="stat-card-num">100%</div><div class="stat-card-label">Dedication</div></div></div>
-</div>
+<div class="about-text"><p><strong>Group 3</strong> is a collaborative team of BSIT students from Rosales National High School, focused on developing web and software projects using modern technologies.</p><div class="college-highlight"><span class="college-highlight-icon">🎓</span><p>We've officially graduated Senior High and are now stepping into <strong>college</strong>. The grind doesn't stop — it levels up.</p></div><div class="about-quote">"We believe in learning through hands-on experience."</div><p>Every project we build is a chance to sharpen our skills, challenge ourselves, and support each other. From enrollment systems to POS applications, we tackle real-world problems with practical solutions.</p><p>We're not just classmates — we're a crew that figures things out <strong>together</strong>.</p><div class="tech-tags"><span class="tech-tag">Android</span><span class="tech-tag">Bootstrap</span><span class="tech-tag">C++</span><span class="tech-tag">Figma</span><span class="tech-tag">HTML / CSS</span><span class="tech-tag">Java</span><span class="tech-tag">JavaScript</span><span class="tech-tag">MySQL</span><span class="tech-tag">PHP</span><span class="tech-tag">Python</span></div></div>
+<div class="stat-cards"><div class="stat-card"><div class="stat-icon-box">👥</div><div><div class="stat-card-num">7</div><div class="stat-card-label">Team Members</div></div></div><div class="stat-card"><div class="stat-icon-box">🚀</div><div><div class="stat-card-num">4+</div><div class="stat-card-label">Projects Completed</div></div></div><div class="stat-card"><div class="stat-icon-box">🎓</div><div><div class="stat-card-num">SHS</div><div class="stat-card-label">Graduates — Now in College!</div></div></div><div class="stat-card"><div class="stat-icon-box">🎯</div><div><div class="stat-card-num">100%</div><div class="stat-card-label">Dedication</div></div></div></div>
 </div>
 </div>
 <footer><p>2026, Group 3 Portfolio</p></footer>
 </div>
 
 <!-- PROJECTS -->
-<div id="page-projects" class="page">
-<div class="section-wrap">
-<span class="section-label">What We Built</span>
-<h2 class="section-heading">Projects</h2>
-<p class="section-desc">Systems and applications built by the team — real problems, practical solutions.</p>
-<div class="projects-grid">
-<div class="project-card">
-<div class="project-tag">01 — Desktop App</div>
-<div class="project-icon">🏫</div>
-<h3>School Enrollment System</h3>
-<p>Windows-based system for managing student records, registration, and enrollment workflows.</p>
-<div class="project-pills"><span class="project-pill">Java</span><span class="project-pill">MySQL</span><span class="project-pill">Windows</span></div>
-</div>
-<div class="project-card">
-<div class="project-tag">02 — Desktop App</div>
-<div class="project-icon">💰</div>
-<h3>POS Application</h3>
-<p>Desktop point-of-sale system with inventory management, sales tracking, and reporting features.</p>
-<div class="project-pills"><span class="project-pill">Java</span><span class="project-pill">MySQL</span><span class="project-pill">Desktop</span></div>
-</div>
-<div class="project-card">
-<div class="project-tag">03 — Web App</div>
-<div class="project-icon">🌐</div>
-<h3>POS Website</h3>
-<p>Web-based point-of-sale interface for real-time sales tracking accessible from any browser.</p>
-<div class="project-pills"><span class="project-pill">PHP</span><span class="project-pill">MySQL</span><span class="project-pill">Bootstrap</span></div>
-</div>
-<div class="project-card">
-<div class="project-tag">04 — Web</div>
-<div class="project-icon">🗂️</div>
-<h3>Portfolio Website</h3>
-<p>Personal portfolio system showcasing individual member profiles, resumes, and completed work.</p>
-<div class="project-pills"><span class="project-pill">HTML/CSS</span><span class="project-pill">JavaScript</span><span class="project-pill">Bootstrap</span></div>
-</div>
-</div>
-</div>
-<footer><p>2026, Group 3 Portfolio</p></footer>
-</div>
+<div id="page-projects" class="page"><div class="section-wrap"><span class="section-label">What We Built</span><h2 class="section-heading">Projects</h2><p class="section-desc">Systems and applications built by the team — real problems, practical solutions.</p><div class="projects-grid"><div class="project-card"><div class="project-tag">01 — Desktop App</div><div class="project-icon">🏫</div><h3>School Enrollment System</h3><p>Windows-based system for managing student records, registration, and enrollment workflows.</p><div class="project-pills"><span class="project-pill">Java</span><span class="project-pill">MySQL</span><span class="project-pill">Windows</span></div></div><div class="project-card"><div class="project-tag">02 — Desktop App</div><div class="project-icon">💰</div><h3>POS Application</h3><p>Desktop point-of-sale system with inventory management, sales tracking, and reporting features.</p><div class="project-pills"><span class="project-pill">Java</span><span class="project-pill">MySQL</span><span class="project-pill">Desktop</span></div></div><div class="project-card"><div class="project-tag">03 — Web App</div><div class="project-icon">🌐</div><h3>POS Website</h3><p>Web-based point-of-sale interface for real-time sales tracking accessible from any browser.</p><div class="project-pills"><span class="project-pill">PHP</span><span class="project-pill">MySQL</span><span class="project-pill">Bootstrap</span></div></div><div class="project-card"><div class="project-tag">04 — Web</div><div class="project-icon">🗂️</div><h3>Portfolio Website</h3><p>Personal portfolio system showcasing individual member profiles, resumes, and completed work.</p><div class="project-pills"><span class="project-pill">HTML/CSS</span><span class="project-pill">JavaScript</span><span class="project-pill">Bootstrap</span></div></div></div></div><footer><p>2026, Group 3 Portfolio</p></footer></div>
 
 <!-- MEMBERS -->
 <div id="page-members" class="page">
-<div class="section-wrap">
-<span class="section-label">The Crew</span>
-<h2 class="section-heading">Members</h2>
-<p class="section-desc">Seven people. One team. Now officially college students. 🎓</p>
-
-<div class="members-grid">
-
-<!-- RENZ -->
-<div class="member-card" onclick="showResume('renz')">
-<div class="member-card-top">
-<div class="member-photo-wrap">
-<!-- Palitan ang '' ng 'images/renz.jpg' (o kahit anong filename ng pic mo) -->
-<div class="member-photo-placeholder" id="ph-renz"></div>
-</div>
-<div><div class="member-role-badge">Team Leader</div><div class="member-name">Viernes, Renz</div></div>
-</div>
-<p class="member-desc">Full-stack developer focused on Android systems and project coordination.</p>
-<div class="member-skills-row"><span class="member-skill-tag">Android</span><span class="member-skill-tag">Java</span><span class="member-skill-tag">PHP</span></div>
-<div class="member-arrow"><i class="bi bi-arrow-up-right"></i></div>
-<div class="leader-badge">⭐ Leader</div>
-</div>
-
-<!-- SEV -->
-<div class="member-card" onclick="showResume('sev')">
-<div class="member-card-top">
-<div class="member-photo-wrap">
-<div class="member-photo-placeholder" id="ph-sev"></div>
-</div>
-<div><div class="member-role-badge">UI / Frontend</div><div class="member-name">Doctor, Sev Florenz</div></div>
-</div>
-<p class="member-desc">Frontend developer and UI designer with Photoshop expertise.</p>
-<div class="member-skills-row"><span class="member-skill-tag">JavaScript</span><span class="member-skill-tag">CSS</span><span class="member-skill-tag">Photoshop</span></div>
-<div class="member-arrow"><i class="bi bi-arrow-up-right"></i></div>
-</div>
-
-<!-- JOSE -->
-<div class="member-card" onclick="showResume('jose')">
-<div class="member-card-top">
-<div class="member-photo-wrap">
-<div class="member-photo-placeholder" id="ph-jose"></div>
-</div>
-<div><div class="member-role-badge">Backend & Docs</div><div class="member-name">Evangelista, Jose Anjelo</div></div>
-</div>
-<p class="member-desc">Backend logic, database management, and documentation.</p>
-<div class="member-skills-row"><span class="member-skill-tag">C++</span><span class="member-skill-tag">Java</span><span class="member-skill-tag">MySQL</span></div>
-<div class="member-arrow"><i class="bi bi-arrow-up-right"></i></div>
-</div>
-
-<!-- ERVIN -->
-<div class="member-card" onclick="showResume('ervin')">
-<div class="member-card-top">
-<div class="member-photo-wrap">
-<div class="member-photo-placeholder" id="ph-ervin"></div>
-</div>
-<div><div class="member-role-badge">UI/UX & Docs</div><div class="member-name">Baniqued, Ervin</div></div>
-</div>
-<p class="member-desc">UI/UX design and system documentation specialist.</p>
-<div class="member-skills-row"><span class="member-skill-tag">Figma</span><span class="member-skill-tag">Adobe XD</span><span class="member-skill-tag">Docs</span></div>
-<div class="member-arrow"><i class="bi bi-arrow-up-right"></i></div>
-</div>
-
-<!-- FERDINAND -->
-<div class="member-card" onclick="showResume('ferdinand')">
-<div class="member-card-top">
-<div class="member-photo-wrap">
-<div class="member-photo-placeholder" id="ph-ferdinand"></div>
-</div>
-<div><div class="member-role-badge">Frontend</div><div class="member-name">Oropilla, Ferdinand</div></div>
-</div>
-<p class="member-desc">Frontend development support and implementation specialist.</p>
-<div class="member-skills-row"><span class="member-skill-tag">HTML/CSS</span><span class="member-skill-tag">JavaScript</span><span class="member-skill-tag">Bootstrap</span></div>
-<div class="member-arrow"><i class="bi bi-arrow-up-right"></i></div>
-</div>
-
-<!-- TERRENCE -->
-<div class="member-card" onclick="showResume('terrence')">
-<div class="member-card-top">
-<div class="member-photo-wrap">
-<div class="member-photo-placeholder" id="ph-terrence"></div>
-</div>
-<div><div class="member-role-badge">QA & Testing</div><div class="member-name">Dela Cruz, Terrence</div></div>
-</div>
-<p class="member-desc">Testing and debugging systems to ensure quality before deployment.</p>
-<div class="member-skills-row"><span class="member-skill-tag">Testing</span><span class="member-skill-tag">Debugging</span><span class="member-skill-tag">QA</span></div>
-<div class="member-arrow"><i class="bi bi-arrow-up-right"></i></div>
-</div>
-
-<!-- KYLE -->
-<div class="member-card" onclick="showResume('kyle')">
-<div class="member-card-top">
-<div class="member-photo-wrap">
-<div class="member-photo-placeholder" id="ph-kyle"></div>
-</div>
-<div><div class="member-role-badge">Dev & Docs</div><div class="member-name">Ayson, Kyle</div></div>
-</div>
-<p class="member-desc">Assistant developer and documentation support specialist.</p>
-<div class="member-skills-row"><span class="member-skill-tag">HTML/CSS</span><span class="member-skill-tag">JavaScript</span><span class="member-skill-tag">Git</span></div>
-<div class="member-arrow"><i class="bi bi-arrow-up-right"></i></div>
-</div>
-
-</div>
-
-</div>
-<footer><p>2026, Group 3 Portfolio 🚀</p></footer>
+<div class="section-wrap"><span class="section-label">The Crew</span><h2 class="section-heading">Members</h2><p class="section-desc">Seven people. One team. Now officially college students. 🎓</p><div class="members-grid"><div class="member-card" onclick="showResume('renz')"><div class="member-card-top"><div class="member-photo-wrap"><div class="member-photo-placeholder" id="ph-renz"></div></div><div><div class="member-role-badge">Team Leader</div><div class="member-name">Viernes, Renz</div></div></div><p class="member-desc">Full-stack developer focused on Android systems and project coordination.</p><div class="member-skills-row"><span class="member-skill-tag">Android</span><span class="member-skill-tag">Java</span><span class="member-skill-tag">PHP</span></div><div class="member-arrow"><i class="bi bi-arrow-up-right"></i></div><div class="leader-badge">⭐ Leader</div></div><div class="member-card" onclick="showResume('sev')"><div class="member-card-top"><div class="member-photo-wrap"><div class="member-photo-placeholder" id="ph-sev"></div></div><div><div class="member-role-badge">UI / Frontend</div><div class="member-name">Doctor, Sev Florenz</div></div></div><p class="member-desc">Frontend developer and UI designer with Photoshop expertise.</p><div class="member-skills-row"><span class="member-skill-tag">JavaScript</span><span class="member-skill-tag">CSS</span><span class="member-skill-tag">Photoshop</span></div><div class="member-arrow"><i class="bi bi-arrow-up-right"></i></div></div><div class="member-card" onclick="showResume('jose')"><div class="member-card-top"><div class="member-photo-wrap"><div class="member-photo-placeholder" id="ph-jose"></div></div><div><div class="member-role-badge">Backend & Docs</div><div class="member-name">Evangelista, Jose Anjelo</div></div></div><p class="member-desc">Backend logic, database management, and documentation.</p><div class="member-skills-row"><span class="member-skill-tag">C++</span><span class="member-skill-tag">Java</span><span class="member-skill-tag">MySQL</span></div><div class="member-arrow"><i class="bi bi-arrow-up-right"></i></div></div><div class="member-card" onclick="showResume('ervin')"><div class="member-card-top"><div class="member-photo-wrap"><div class="member-photo-placeholder" id="ph-ervin"></div></div><div><div class="member-role-badge">UI/UX & Docs</div><div class="member-name">Baniqued, Ervin</div></div></div><p class="member-desc">UI/UX design and system documentation specialist.</p><div class="member-skills-row"><span class="member-skill-tag">Figma</span><span class="member-skill-tag">Adobe XD</span><span class="member-skill-tag">Docs</span></div><div class="member-arrow"><i class="bi bi-arrow-up-right"></i></div></div><div class="member-card" onclick="showResume('ferdinand')"><div class="member-card-top"><div class="member-photo-wrap"><div class="member-photo-placeholder" id="ph-ferdinand"></div></div><div><div class="member-role-badge">Frontend</div><div class="member-name">Oropilla, Ferdinand</div></div></div><p class="member-desc">Frontend development support and implementation specialist.</p><div class="member-skills-row"><span class="member-skill-tag">HTML/CSS</span><span class="member-skill-tag">JavaScript</span><span class="member-skill-tag">Bootstrap</span></div><div class="member-arrow"><i class="bi bi-arrow-up-right"></i></div></div><div class="member-card" onclick="showResume('terrence')"><div class="member-card-top"><div class="member-photo-wrap"><div class="member-photo-placeholder" id="ph-terrence"></div></div><div><div class="member-role-badge">QA & Testing</div><div class="member-name">Dela Cruz, Terrence</div></div></div><p class="member-desc">Testing and debugging systems to ensure quality before deployment.</p><div class="member-skills-row"><span class="member-skill-tag">Testing</span><span class="member-skill-tag">Debugging</span><span class="member-skill-tag">QA</span></div><div class="member-arrow"><i class="bi bi-arrow-up-right"></i></div></div><div class="member-card" onclick="showResume('kyle')"><div class="member-card-top"><div class="member-photo-wrap"><div class="member-photo-placeholder" id="ph-kyle"></div></div><div><div class="member-role-badge">Dev & Docs</div><div class="member-name">Ayson, Kyle</div></div></div><p class="member-desc">Assistant developer and documentation support specialist.</p><div class="member-skills-row"><span class="member-skill-tag">HTML/CSS</span><span class="member-skill-tag">JavaScript</span><span class="member-skill-tag">Git</span></div><div class="member-arrow"><i class="bi bi-arrow-up-right"></i></div></div></div></div><footer><p>2026, Group 3 Portfolio 🚀</p></footer>
 </div>
 
 <!-- MODAL -->
@@ -553,291 +380,88 @@ footer { border-top: 1px solid var(--border); padding: 1.75rem; text-align: cent
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 <script>
-// ── PAGES ──
-const PAGES = ['home','about','projects','members'];
 function showPage(name) {
-PAGES.forEach(p => {
-document.getElementById('page-'+p).classList.remove('active');
-document.getElementById('nav-'+p).classList.remove('active');
-const mn = document.getElementById('mnav-'+p);
-if(mn) mn.classList.remove('active');
-});
-document.getElementById('page-'+name).classList.add('active');
-document.getElementById('nav-'+name).classList.add('active');
-const mn = document.getElementById('mnav-'+name);
-if(mn) mn.classList.add('active');
-window.scrollTo({top:0, behavior:'smooth'});
+  const pages = ['home','about','projects','members'];
+  pages.forEach(p => {
+    document.getElementById('page-'+p).classList.remove('active');
+    document.getElementById('nav-'+p).classList.remove('active');
+    const mn = document.getElementById('mnav-'+p);
+    if(mn) mn.classList.remove('active');
+  });
+  document.getElementById('page-'+name).classList.add('active');
+  document.getElementById('nav-'+name).classList.add('active');
+  const mn = document.getElementById('mnav-'+name);
+  if(mn) mn.classList.add('active');
+  window.scrollTo({top:0, behavior:'smooth'});
 }
 
-// ── THEME ──
 function toggleTheme() {
-const html = document.documentElement;
-const isDark = html.dataset.theme === 'dark';
-html.dataset.theme = isDark ? 'light' : 'dark';
-document.getElementById('themeBtn').textContent = isDark ? '🌙' : '☀️';
+  const html = document.documentElement;
+  const isDark = html.dataset.theme === 'dark';
+  html.dataset.theme = isDark ? 'light' : 'dark';
+  document.getElementById('themeBtn').textContent = isDark ? '🌙' : '☀️';
 }
 
-// ── HAMBURGER ──
 let menuOpen = false;
 function toggleMenu() {
-menuOpen = !menuOpen;
-const menu = document.getElementById('mobileMenu');
-const icon = document.getElementById('hamburgerIcon');
-if (menuOpen) {
-menu.classList.add('open');
-icon.className = 'bi bi-x-lg';
-} else {
-menu.classList.remove('open');
-icon.className = 'bi bi-list';
+  menuOpen = !menuOpen;
+  const menu = document.getElementById('mobileMenu');
+  const icon = document.getElementById('hamburgerIcon');
+  if (menuOpen) { menu.classList.add('open'); icon.className = 'bi bi-x-lg'; } 
+  else { menu.classList.remove('open'); icon.className = 'bi bi-list'; }
 }
-}
-function closeMenu() {
-menuOpen = false;
-document.getElementById('mobileMenu').classList.remove('open');
-document.getElementById('hamburgerIcon').className = 'bi bi-list';
-}
-// Close menu on outside click
-document.addEventListener('click', function(e) {
-if (menuOpen && !e.target.closest('.mobile-menu') && !e.target.closest('#hamburgerBtn')) {
-closeMenu();
-}
-});
+function closeMenu() { menuOpen = false; document.getElementById('mobileMenu').classList.remove('open'); document.getElementById('hamburgerIcon').className = 'bi bi-list'; }
+document.addEventListener('click', function(e) { if (menuOpen && !e.target.closest('.mobile-menu') && !e.target.closest('#hamburgerBtn')) closeMenu(); });
 
-// ── PHOTO UPLOAD ──
-const memberPhotos = {};
-
-function triggerUpload(id) {
-document.getElementById('input-'+id).click();
-}
-
-function handlePhoto(event, id) {
-const file = event.target.files[0];
-if (!file) return;
-const reader = new FileReader();
-reader.onload = function(e) {
-const url = e.target.result;
-memberPhotos[id] = url;
-
-// Update card photo
-const ph = document.getElementById('ph-'+id);
-ph.innerHTML = `<img src="${url}" alt="Photo" class="member-photo">`;
-};
-reader.readAsDataURL(file);
-}
-
-// ── RESUME DATA ──
 const resumeData = {
-renz: {
-name: 'Renz Viernes', initials: 'RV', role: 'Team Leader / Full-Stack Developer',
-photo: 'images/viernes.jpg',
-bio: 'A passionate full-stack developer focused on building Android systems and web applications. Led Group 3 to complete multiple successful projects.',
-skills: ['Android Dev','Java','PHP','MySQL','Project Management'],
-education: [
-{year:'2019', title:'Elementary', sub:'Benigno V. Aldana Elementary School'},
-{year:'2023', title:'Junior High', sub:'Benigno V. Aldana National High School'},
-{year:'2025', title:'Senior High — BSIT', sub:'Benigno V. Aldana National High School'},
-{year:'2025 – Present', title:'College — BSIT', sub:'University of Eastern Pangasinan'}
-],
-experience: [{year:'2024 – Present', title:'[EDIT: Company/Org]', sub:'Lead Developer', desc:'[EDIT: Describe your role and achievements]'}],
-awards: [{year:'2024', title:'[EDIT: Award Title]'},{year:'2024', title:'[EDIT: Award Title]'}],
-interests: ['Coding','Mobile Games','Technology','Leadership'],
-contact: {address:'[EDIT: Address]', phone:'[EDIT: Phone]', email:'[EDIT: Email]', facebook:'https://www.facebook.com/renz.joseph.s.viernes'}
-},
-sev: {
-name: 'Sev Florenz Doctor', initials: 'SF', role: 'UI / Frontend Developer',
-photo: 'images/doctor.jpg',
-bio: 'Expert in creating innovative, user-friendly websites. Specialize in building responsive, scalable, and visually appealing interfaces.',
-skills: ['JavaScript','HTML & CSS','Bootstrap','PHP','Animation (Flash 8)','Adobe Photoshop','VB.Net'],
-education: [
-{year:'2019', title:'Elementary', sub:'San Pedro East Elementary School'},
-{year:'2023', title:'Junior High', sub:'Rosales National High School'},
-{year:'2025', title:'Senior High — BSIT', sub:'Rosales National High School'},
-{year:'2025 – Present', title:'College — BSIT', sub:'University of Eastern Pangasinan'}
-],
-experience: [{year:'2026 – Present', title:'Hustleware', sub:'Photoshop Trainee', desc:'Mastering photo retouching, color correction, layer management, and digital composition. Creating visual effects, typography, and layout designs for digital and print media.'}],
-awards: [
-{year:'2024', title:'2nd Place — Tarpaulin Making'},
-{year:'2024', title:'2nd Place — T-shirt Printing (School-based / Division)'},
-{year:'2024', title:'1st / 2nd Place — School-Based Website / Division'},
-{year:'2024', title:'Best In Animation (Flash 8)'},
-{year:'2024', title:'Best In Photo Editing'}
-],
-interests: ['Music','Books (Manhwa)','Coding'],
-contact: {address:'Balincanaway, Rosales Pangasinan', phone:'+063 *** *** ***', email:'sydflorencedoctor@gmail.com', facebook:'https://www.facebook.com/sed.florence'}
-},
-jose: {
-name: 'Jose Anjelo Evangelista', initials: 'JA', role: 'Backend / Documentation',
-photo: 'images/evangelista.jpg',
-bio: 'Working with server-side logic, database management, and API integration. Also responsible for the efficient management and organization of documents.',
-skills: ['C++','Documentation','Java','MySQL','Visual Basic'],
-education: [
-{year:'2019', title:'Elementary', sub:'Manaoag Central School Sped Center'},
-{year:'2023', title:'Junior High', sub:'Manaoag National High School'},
-{year:'2025', title:'Senior High — TVL-ICT', sub:'Manaoag National High School Senior High School'},
-{year:'2025 – Present', title:'College — BSIT', sub:'University of Eastern Pangasinan'}
-],
-experience: [{year:'2025', title:'Manaoag Central School Sped Center', sub:'Document Controller', desc:'Responsible for efficiently managing and organizing documents to ensure the integrity, accessibility and compliance of school records.'}],
-awards: [{year:'2024', title:'2nd Place — Science Spelling Bee'}],
-interests: ['Coding','FOSS','Music','Visual Novels'],
-contact: {address:'Tebuel, Manaoag, Pangasinan', phone:'+63 *** *** ***', email:'ajevschool@proton.me', facebook:'https://www.facebook.com/evilnu'}
-},
-ervin: {
-name: 'Ervin Baniqued', initials: 'EB', role: 'UI/UX Designer & Documentation',
-photo: 'images/baniqued.jpg',
-bio: 'UI/UX designer focused on creating beautiful and intuitive experiences. Also handles system documentation and project reports.',
-skills: ['Figma','Adobe XD','UI Design','Wireframing','Documentation'],
-education: [
-{year:'2019', title:'Elementary', sub:'[EDIT: School Name]'},
-{year:'2023', title:'Junior High', sub:'Rosales National High School'},
-{year:'2025', title:'Senior High — BSIT', sub:'Rosales National High School'},
-{year:'2025 – Present', title:'College — BSIT', sub:'University of Eastern Pangasinan'}
-],
-experience: [],
-awards: [],
-interests: ['Design','Drawing','Photography','Tech Trends'],
-contact: {address:'[EDIT]', phone:'[EDIT]', email:'[EDIT]', facebook:'http://facebook.com/ervin.baniqued.7'}
-},
-ferdinand: {
-name: 'Ferdinand Oropilla', initials: 'FO', role: 'Frontend Developer',
-photo: 'images/oropilla.jpg',
-bio: 'Frontend developer building responsive and interactive interfaces. Implements designs into functional web pages.',
-skills: ['HTML/CSS','JavaScript','React','Bootstrap','Responsive Design'],
-education: [
-{year:'2019', title:'Elementary', sub:'Rosario Integrated School'},
-{year:'2023', title:'Junior High', sub:'Rosario Integrated School'},
-{year:'2025', title:'Senior High — TVL-ELECTRICAL INSTALLATION AND MAINTENANCE (EIM)', sub:'Rosario Integrated School'},
-{year:'2025 – Present', title:'College — BSIT', sub:'University of Eastern Pangasinan'}
-],
-experience: [],
-awards: [],
-interests: ['Web Design','Gaming','Music','Sports'],
-contact: {address:'[EDIT]', phone:'[EDIT]', email:'[EDIT]', facebook:'https://www.facebook.com/ferdinand.gabayan.2025'}
-},
-terrence: {
-name: 'Terrence Dela Cruz', initials: 'TD', role: 'QA & Testing Specialist',
-photo: 'images/delacruz.jpg',
-bio: 'Quality assurance specialist who finds and fixes bugs. Ensures all systems are reliable and user-friendly before deployment.',
-skills: ['Manual Testing','Bug Tracking','Test Cases','Debugging','QA'],
-education: [
-{year:'2019', title:'Elementary', sub:'Sapilang Elementary School'},
-{year:'2023', title:'Junior High', sub:'Rosario Integrated School'},
-{year:'2025', title:'Senior High — TVL-ELECTRICAL INSTALLATION AND MAINTENANCE (EIM)', sub:'Rosario Integrated School'},
-{year:'2025 – Present', title:'College — BSIT', sub:'University of Eastern Pangasinan'}
-],
-experience: [],
-awards: [],
-interests: ['Gaming','Finding Bugs','Tech Reviews','Problem Solving'],
-contact: {address:'[EDIT]', phone:'[EDIT]', email:'[EDIT]', facebook:'https://www.facebook.com/rencedelulu'}
-},
-kyle: {
-name: 'Kyle Ayson', initials: 'KA', role: 'Developer & Documentation',
-photo: 'images/ayson.jpg',
-bio: 'Assistant developer handling documentation and project coordination. Supports the team in development tasks and maintaining project records.',
-skills: ['HTML/CSS','JavaScript','Documentation','Git','Basic Backend'],
-education: [
-{year:'2019', title:'Elementary', sub:'Baritao Elementary School'},
-{year:'2023', title:'Junior High', sub:'Manaoag National High School'},
-{year:'2025', title:'Senior High — HUMSS', sub:'Manaoag National High School Senior High School'},
-{year:'2025 – Present', title:'College — BSIT', sub:'University of Eastern Pangasinan'}
-],
-experience: [],
-awards: [],
-interests: ['Coding','Reading','Writing','Tech News'],
-contact: {address:'[EDIT]', phone:'[EDIT]', email:'[EDIT]', facebook:'https://www.facebook.com/kyle.ayson.50'}
-}
+renz: { name: 'Renz Viernes', initials: 'RV', role: 'Team Leader / Full-Stack Developer', photo: 'images/viernes.jpg', bio: 'A passionate full-stack developer focused on building Android systems and web applications. Led Group 3 to complete multiple successful projects.', skills: ['Android Dev','Java','PHP','MySQL','Project Management'], education: [{year:'2019', title:'Elementary', sub:'Benigno V. Aldana Elementary School'},{year:'2023', title:'Junior High', sub:'Benigno V. Aldana National High School'},{year:'2025', title:'Senior High — BSIT', sub:'Benigno V. Aldana National High School'},{year:'2025 – Present', title:'College — BSIT', sub:'University of Eastern Pangasinan'}], experience: [{year:'2024 – Present', title:'[EDIT: Company/Org]', sub:'Lead Developer', desc:'[EDIT: Describe your role and achievements]'}], awards: [{year:'2024', title:'[EDIT: Award Title]'},{year:'2024', title:'[EDIT: Award Title]'}], interests: ['Coding','Mobile Games','Technology','Leadership'], contact: {address:'[EDIT: Address]', phone:'[EDIT: Phone]', email:'[EDIT: Email]', facebook:'https://www.facebook.com/renz.joseph.s.viernes'} },
+sev: { name: 'Sev Florenz Doctor', initials: 'SF', role: 'UI / Frontend Developer', photo: 'images/doctor.jpg', bio: 'Expert in creating innovative, user-friendly websites. Specialize in building responsive, scalable, and visually appealing interfaces.', skills: ['JavaScript','HTML & CSS','Bootstrap','PHP','Animation (Flash 8)','Adobe Photoshop','VB.Net'], education: [{year:'2019', title:'Elementary', sub:'San Pedro East Elementary School'},{year:'2023', title:'Junior High', sub:'Rosales National High School'},{year:'2025', title:'Senior High — BSIT', sub:'Rosales National High School'},{year:'2025 – Present', title:'College — BSIT', sub:'University of Eastern Pangasinan'}], experience: [{year:'2026 – Present', title:'Hustleware', sub:'Photoshop Trainee', desc:'Mastering photo retouching, color correction, layer management, and digital composition. Creating visual effects, typography, and layout designs for digital and print media.'}], awards: [{year:'2024', title:'2nd Place — Tarpaulin Making'},{year:'2024', title:'2nd Place — T-shirt Printing (School-based / Division)'},{year:'2024', title:'1st / 2nd Place — School-Based Website / Division'},{year:'2024', title:'Best In Animation (Flash 8)'},{year:'2024', title:'Best In Photo Editing'}], interests: ['Music','Books (Manhwa)','Coding'], contact: {address:'Balincanaway, Rosales Pangasinan', phone:'09277586980', email:'sydflorencedoctor@gmail.com', facebook:'https://www.facebook.com/sed.florence'} },
+jose: { name: 'Jose Anjelo Evangelista', initials: 'JA', role: 'Backend / Documentation', photo: 'images/evangelista.jpg', bio: 'Working with server-side logic, database management, and API integration. Also responsible for the efficient management and organization of documents.', skills: ['C++','Documentation','Java','MySQL','Visual Basic'], education: [{year:'2019', title:'Elementary', sub:'Manaoag Central School Sped Center'},{year:'2023', title:'Junior High', sub:'Manaoag National High School'},{year:'2025', title:'Senior High — TVL-ICT', sub:'Manaoag National High School Senior High School'},{year:'2025 – Present', title:'College — BSIT', sub:'University of Eastern Pangasinan'}], experience: [{year:'2025', title:'Manaoag Central School Sped Center', sub:'Document Controller', desc:'Responsible for efficiently managing and organizing documents to ensure the integrity, accessibility and compliance of school records.'}], awards: [{year:'2024', title:'2nd Place — Science Spelling Bee'}], interests: ['Coding','FOSS','Music','Visual Novels'], contact: {address:'Tebuel, Manaoag, Pangasinan', phone:'+63 *** *** ***', email:'ajevschool@proton.me', facebook:'https://www.facebook.com/evilnu'} },
+ervin: { name: 'Ervin Baniqued', initials: 'EB', role: 'UI/UX Designer & Documentation', photo: 'images/baniqued.jpg', bio: 'UI/UX designer focused on creating beautiful and intuitive experiences. Also handles system documentation and project reports.', skills: ['Figma','Adobe XD','UI Design','Wireframing','Documentation'], education: [{year:'2019', title:'Elementary', sub:'[EDIT: School Name]'},{year:'2023', title:'Junior High', sub:'Rosales National High School'},{year:'2025', title:'Senior High — BSIT', sub:'Rosales National High School'},{year:'2025 – Present', title:'College — BSIT', sub:'University of Eastern Pangasinan'}], experience: [], awards: [], interests: ['Design','Drawing','Photography','Tech Trends'], contact: {address:'Paldit, Sison, Pangasinan', phone:'09102493294', email:'baniquedervin@gmail.com', facebook:'http://facebook.com/ervin.baniqued.7'} },
+ferdinand: { name: 'Ferdinand Oropilla', initials: 'FO', role: 'Frontend Developer', photo: 'images/oropilla.jpg', bio: 'Frontend developer building responsive and interactive interfaces. Implements designs into functional web pages.', skills: ['HTML/CSS','JavaScript','React','Bootstrap','Responsive Design'], education: [{year:'2019', title:'Elementary', sub:'Rosario Integrated School'},{year:'2023', title:'Junior High', sub:'Rosario Integrated School'},{year:'2025', title:'Senior High — TVL-ELECTRICAL INSTALLATION AND MAINTENANCE (EIM)', sub:'Rosario Integrated School'},{year:'2025 – Present', title:'College — BSIT', sub:'University of Eastern Pangasinan'}], experience: [], awards: [], interests: ['Web Design','Gaming','Music','Sports'], contact: {address:'Rosario', phone:'0927483980', email:'Gabayan@gmail.com', facebook:'https://www.facebook.com/ferdinand.gabayan.2025'} },
+terrence: { name: 'Terrence Dela Cruz', initials: 'TD', role: 'QA & Testing Specialist', photo: 'images/delacruz.jpg', bio: 'Quality assurance specialist who finds and fixes bugs. Ensures all systems are reliable and user-friendly before deployment.', skills: ['Manual Testing','Bug Tracking','Test Cases','Debugging','QA'], education: [{year:'2019', title:'Elementary', sub:'Sapilang Elementary School'},{year:'2023', title:'Junior High', sub:'Rosario Integrated School'},{year:'2025', title:'Senior High — TVL-ELECTRICAL INSTALLATION AND MAINTENANCE (EIM)', sub:'Rosario Integrated School'},{year:'2025 – Present', title:'College — BSIT', sub:'University of Eastern Pangasinan'}], experience: [], awards: [], interests: ['Gaming','Finding Bugs','Tech Reviews','Problem Solving'], contact: {address:'Rosario', phone:'09275938052', email:'terrence@gmail.com', facebook:'https://www.facebook.com/rencedelulu'} },
+kyle: { name: 'Kyle Ayson', initials: 'KA', role: 'Developer & Documentation', photo: 'images/ayson.jpg', bio: 'Assistant developer handling documentation and project coordination. Supports the team in development tasks and maintaining project records.', skills: ['HTML/CSS','JavaScript','Documentation','Git','Basic Backend'], education: [{year:'2019', title:'Elementary', sub:'Baritao Elementary School'},{year:'2023', title:'Junior High', sub:'Manaoag National High School'},{year:'2025', title:'Senior High — HUMSS', sub:'Manaoag National High School Senior High School'},{year:'2025 – Present', title:'College — BSIT', sub:'University of Eastern Pangasinan'}], experience: [], awards: [], interests: ['Coding','Reading','Writing','Tech News'], contact: {address:'Tebuel, Manaoag, Pangasinan', phone:'09234354320', email:'kYLE@gmail.com', facebook:'https://www.facebook.com/kyle.ayson.50'} }
 };
 
-// ── RENDER PHOTOS ON LOAD ──
-// Binabasa ang photo path mula sa resumeData at inilalagay sa card
 function renderPhotos() {
-Object.keys(resumeData).forEach(id => {
-const m = resumeData[id];
-const el = document.getElementById('ph-' + id);
-if (!el) return;
-if (m.photo) {
-el.innerHTML = `<img src="${m.photo}" alt="${m.name}" class="member-photo">`;
-} else {
-el.innerHTML = `<span>${m.initials}</span>`;
-}
-});
+  Object.keys(resumeData).forEach(id => {
+    const m = resumeData[id];
+    const el = document.getElementById('ph-' + id);
+    if (!el) return;
+    if (m.photo) el.innerHTML = `<img src="${m.photo}" alt="${m.name}" class="member-photo">`;
+    else el.innerHTML = `<span>${m.initials}</span>`;
+  });
 }
 renderPhotos();
 
 function showResume(id) {
-const m = resumeData[id];
-if (!m) return;
-const firstName = m.name.split(' ')[0];
-const restName = m.name.split(' ').slice(1).join(' ');
-const photo = m.photo;
-const avatarHTML = photo
-? `<img src="${photo}" alt="${m.name}">`
-: `<div class="resume-initials">${m.initials}</div>`;
-
-let resumeHTML = `
+  const m = resumeData[id];
+  if (!m) return;
+  const firstName = m.name.split(' ')[0];
+  const restName = m.name.split(' ').slice(1).join(' ');
+  const photo = m.photo;
+  const avatarHTML = photo ? `<img src="${photo}" alt="${m.name}">` : `<div class="resume-initials">${m.initials}</div>`;
+  document.getElementById('resumeBody').innerHTML = `
    <div class="resume-hero">
      <div class="resume-avatar-lg">${avatarHTML}</div>
-     <div>
-       <h2 class="resume-fullname"><span>${firstName}</span> ${restName}</h2>
-       <span class="resume-role-tag">${m.role}</span>
-       <p class="resume-bio">${m.bio}</p>
-     </div>
+     <div><h2 class="resume-fullname"><span>${firstName}</span> ${restName}</h2><span class="resume-role-tag">${m.role}</span><p class="resume-bio">${m.bio}</p></div>
    </div>
    <div class="resume-cols">
-     <div class="resume-section">
-       <div class="resume-section-label">Skills & Expertise</div>
-       <div class="resume-skill-list">${m.skills.map(s=>`<span class="resume-skill">${s}</span>`).join('')}</div>
-     </div>
-     <div class="resume-section">
-       <div class="resume-section-label">Education</div>
-       ${m.education.map(e=>`<div class="resume-edu-item"><div class="resume-item-year">${e.year}</div><div class="resume-item-title">${e.title}</div><div class="resume-item-sub">${e.sub}</div></div>`).join('')}
-     </div>
-   </div>`;
-
-if (m.experience.length > 0 || m.awards.length > 0) {
-resumeHTML += `<div class="resume-cols">`;
-if (m.experience.length > 0) {
-resumeHTML += `<div class="resume-section">
-       <div class="resume-section-label">Experience</div>
-       ${m.experience.map(e=>`<div class="resume-exp-item"><div class="resume-item-year">${e.year}</div><div class="resume-item-title">${e.title}</div><div class="resume-item-sub">${e.sub}</div><div class="resume-item-desc">${e.desc}</div></div>`).join('')}
-     </div>`;
+     <div class="resume-section"><div class="resume-section-label">Skills & Expertise</div><div class="resume-skill-list">${m.skills.map(s=>`<span class="resume-skill">${s}</span>`).join('')}</div></div>
+     <div class="resume-section"><div class="resume-section-label">Education</div>${m.education.map(e=>`<div class="resume-edu-item"><div class="resume-item-year">${e.year}</div><div class="resume-item-title">${e.title}</div><div class="resume-item-sub">${e.sub}</div></div>`).join('')}</div>
+   </div>
+   ${m.experience && m.experience.length ? `<div class="resume-cols"><div class="resume-section"><div class="resume-section-label">Experience</div>${m.experience.map(e=>`<div class="resume-exp-item"><div class="resume-item-year">${e.year}</div><div class="resume-item-title">${e.title}</div><div class="resume-item-sub">${e.sub}</div><div class="resume-item-desc">${e.desc}</div></div>`).join('')}</div></div>` : ''}
+   ${m.awards && m.awards.length ? `<div class="resume-cols"><div class="resume-section"><div class="resume-section-label">Awards</div>${m.awards.map(a=>`<div class="resume-award-item"><div class="resume-item-year">${a.year}</div><div class="resume-item-title">${a.title}</div></div>`).join('')}</div></div>` : ''}
+   <div class="resume-cols">
+     <div class="resume-section"><div class="resume-section-label">Interests</div><div class="resume-interests">${m.interests.map(i=>`<span class="resume-interest-chip">${i}</span>`).join('')}</div></div>
+     <div class="resume-section"><div class="resume-section-label">Contact</div><ul class="resume-contact-list"><li><i class="bi bi-geo-alt"></i> ${m.contact.address}</li><li><i class="bi bi-telephone"></i> ${m.contact.phone}</li><li><i class="bi bi-envelope"></i> <a href="mailto:${m.contact.email}">${m.contact.email}</a></li><li><i class="bi bi-facebook"></i> <a href="${m.contact.facebook}" target="_blank">Facebook Profile</a></li></ul></div>
+   </div>
+ `;
+  document.getElementById('resumeOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
 }
-if (m.awards.length > 0) {
-resumeHTML += `<div class="resume-section">
-       <div class="resume-section-label">Awards</div>
-       ${m.awards.map(a=>`<div class="resume-award-item"><div class="resume-item-year">${a.year}</div><div class="resume-item-title">${a.title}</div></div>`).join('')}
-     </div>`;
-}
-resumeHTML += `</div>`;
-}
-
-resumeHTML += `<div class="resume-cols">
-     <div class="resume-section">
-       <div class="resume-section-label">Interests</div>
-       <div class="resume-interests">${m.interests.map(i=>`<span class="resume-interest-chip">${i}</span>`).join('')}</div>
-     </div>
-     <div class="resume-section">
-       <div class="resume-section-label">Contact</div>
-       <ul class="resume-contact-list">
-         <li><i class="bi bi-geo-alt"></i> ${m.contact.address}</li>
-         <li><i class="bi bi-telephone"></i> ${m.contact.phone}</li>
-         <li><i class="bi bi-envelope"></i> <a href="mailto:${m.contact.email}">${m.contact.email}</a></li>
-         <li><i class="bi bi-facebook"></i> <a href="${m.contact.facebook}" target="_blank">Facebook Profile</a></li>
-       </ul>
-     </div>
-   </div>`;
-
-document.getElementById('resumeBody').innerHTML = resumeHTML;
-document.getElementById('resumeOverlay').classList.add('open');
-document.body.style.overflow = 'hidden';
-}
-
-function closeResume() {
-document.getElementById('resumeOverlay').classList.remove('open');
-document.body.style.overflow = '';
-}
-function closeResumeOnOverlay(e) {
-if (e.target === document.getElementById('resumeOverlay')) closeResume();
-}
+function closeResume() { document.getElementById('resumeOverlay').classList.remove('open'); document.body.style.overflow = ''; }
+function closeResumeOnOverlay(e) { if (e.target === document.getElementById('resumeOverlay')) closeResume(); }
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeResume(); });
 </script>
 </body>
